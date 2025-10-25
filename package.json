@@ -2,14 +2,14 @@
   "name": "react",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type":"module",
   "scripts": {
-  "dev": "concurrently \"npm run json-server\" \"vite\"",
-  "json-server": "json-server --watch db.json --port 5000",
-  "start": "node server.js",
-  "build": "vite build",
-  "preview": "vite preview"
-},
+    "dev": "concurrently \"npm run json-server\" \"vite\"",
+    "json-server": "json-server --watch db.json --port 5000",
+    "start": "node server.js",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "@remixicon/react": "^4.6.0",
     "@tailwindcss/vite": "^4.1.14",
