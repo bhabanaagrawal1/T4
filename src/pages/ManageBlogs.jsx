@@ -68,8 +68,8 @@ const ManageBlogs = () => {
   };
 
   return (
-    <div className="w-full p-6 flex flex-col items-center justify-center">
-      <h1 className="w-full h-[15%] text-3xl font-bold mb-2 bg-gradient-to-br from-blue-500 to-pink-300 bg-clip-text text-transparent text-center p-2">
+    <div className="w-full h-[100vh] p-6 flex flex-col items-center justify-center">
+      <h1 className="w-full h-[10%] text-3xl font-bold bg-gradient-to-br from-blue-500 to-pink-300 bg-clip-text text-transparent text-center p-2">
         Create Blog Posts
       </h1>
 

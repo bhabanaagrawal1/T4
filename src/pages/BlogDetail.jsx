@@ -31,7 +31,7 @@ const BlogDetail = () => {
         {blog.date} • {blog.readTime}
       </p>
       <div className="md:text-[17px] text-[14px]">{blog.longDesc}</div>
-      <Link to="/Home" className="text-blue-600 underline mt-7">
+      <Link to="/Home#two" className="text-blue-600 underline mt-7">
         Back to Home
       </Link></div>
     </div>

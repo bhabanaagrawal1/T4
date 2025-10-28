@@ -71,7 +71,7 @@ import Footer from '../components/Footer'
   title: "When the Cartoons Came to Life",
   tit_desc: "Beloved characters march beneath a canopy of lights, music fills the air, and fans of every age gather to watch their childhood dreams parade by — in color, in motion, and in pure joy.",
   heading: "When the Cartoons Came to Life",
-  img_1: "https://i.pinimg.com/1200x/cc/25/64/cc2564109e6f479fd55861add7903e64.jpg",
+  img_1: "https://i.pinimg.com/736x/94/a0/36/94a0366a1ba60cdb518c86e9a2575f90.jpg",
   img_2: "https://i.pinimg.com/736x/ca/8f/f9/ca8ff9659af1476a57b4bb977e77a1ec.jpg",
   img_3: "https://i.pinimg.com/1200x/b4/47/16/b447161cb5e0700b2a7e4d7ab5ee28a7.jpg",
   img_4: "https://i.pinimg.com/736x/82/45/62/824562d7c44edc911a8273db056ab1ae.jpg",
@@ -91,8 +91,8 @@ const navigate = useNavigate()
 const {id} = useParams()
 const post = Sect[id]
   return (
-    <section id='one' className=''>
-      <div className='md:w-full md:h-[85vh] h-auto bg-cover bg-no-repeat flex justify-center items-center' style={{backgroundImage:`url(https://wallpapers.com/images/hd/purple-gradient-background-6000-x-4000-9710xoirfab2lbeb.jpg)`}}>
+    <section>
+      <div className='md:w-full md:h-[90vh] h-auto bg-cover bg-no-repeat flex justify-center items-center' style={{backgroundImage:`url(https://wallpapers.com/images/hd/purple-gradient-background-6000-x-4000-9710xoirfab2lbeb.jpg)`}}>
         <div className='text-center md:w-[50%] w-[85%] md:m-5 mt-15'>
             <span className='text-[14px] text-gray-500 border-[1px] p-2 rounded-full'><i class="ri-bard-fill"></i> {post.date}</span>
             <div className='mt-3 md:text-5xl text-3xl md:leading-16 leading-9'>{post.tag}</div>
@@ -115,7 +115,7 @@ const post = Sect[id]
         </div>
         <div className='w-full md:h-[85%] flex justify-center items-center flex-col md:flex-row'>
           <div className='md:w-[50%] w-[90%] h-[90%] flex flex-col items-center'>
-          <div className='md:w-[49%] h-[100%] flex flex-col md:items-center justify-around md:gap-0 gap-7'>
+          <div className='md:w-[49%] h-[100%] flex flex-col md:items-center justify-around md:gap-0 gap-10'>
             <div className='w-[95%] h-[21%] bg-white shadow-xl/30 rounded-2xl'>
             <img src={post.img_1} alt="" className='object-cover rounded-2xl w-[100%] md:h-[100%] h-[300px]'/>
             </div>

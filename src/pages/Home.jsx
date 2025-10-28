@@ -4,7 +4,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
 import 'swiper/css/navigation'
 import { FreeMode,Pagination,Navigation } from 'swiper/modules' 
-import { CardData, ServiceData } from '../constants'
+import { CardData, OpenBlog, ServiceData } from '../constants'
 import mus_fest from '../assets/mus_fest.mp4'
 import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
@@ -17,7 +17,7 @@ import Blog_list from './BlogDetail'
 
 
 const Home = () => {
-  const sum = blogs.length + 9
+  const sum = blogs.length + OpenBlog.length + 4
   const navigate = useNavigate()
   const [data,setData] = useState([])
   useEffect(()=>{
@@ -46,8 +46,8 @@ const Home = () => {
   return (
  <div>
       <Navbar/>
-      <div className="md:bg-[linear-gradient(rgba(10,25,47,0.5),rgba(0,0,70,0.5)),url('https://i.pinimg.com/736x/32/5c/a5/325ca5ecb05616ff4ae398f3fcd1de5e.jpg')] bg-[linear-gradient(rgba(10,25,47,0.3),rgba(0,0,70,0.5)),url('https://i.pinimg.com/1200x/83/4f/a3/834fa312e31595f0224b4f5a122c4fd5.jpg')] w-full md:h-[170vh] h-[100vh] bg-no-repeat bg-cover z-0  bg-center bg-gradient-to-b from-transparent to-black/80">
-        <div className='md:pt-65 md:translate-y-[0%] translate-y-[43%] text-center  text-white'>
+      <div className="md:bg-[linear-gradient(rgba(10,25,47,0.5),rgba(0,0,70,0.5)),url('https://i.pinimg.com/736x/32/5c/a5/325ca5ecb05616ff4ae398f3fcd1de5e.jpg')] bg-[linear-gradient(rgba(10,25,47,0.3),rgba(0,0,70,0.5)),url('https://i.pinimg.com/1200x/83/4f/a3/834fa312e31595f0224b4f5a122c4fd5.jpg')] w-full md:h-[160vh] h-[100vh] bg-no-repeat bg-cover z-0  bg-center bg-gradient-to-b from-transparent to-black/80">
+        <div className='md:pt-65 md:translate-y-[0%] translate-y-[49%] text-center  text-white'>
           <span className='text-[20px] bg-white/20 backdrop-blur-md px-4 py-2 rounded-full'><i className="ri-shining-fill"></i> Relive the Magic</span>
           <h1 className='md:text-[3.1rem] md:m-5 md:mb-0 text-[1.5rem] mt-3 ml-5 mr-5 font-extrabold '>Because Some Magic Never Fades</h1>
           <p className='md:text-[1rem] text-sm text-shadow-indigo-200 md:ml-56 ml-7 mr-7 md:mr-56 mt-3 font-semibold md:mb-60'>Step into a world of wonder, where every story sparkles and every moment feels like magic.
@@ -187,13 +187,12 @@ Discover the heart of Disneyland — the happiest place on Earth.</p>
           </div>
         </div>
       </div>
-   <div className='w-full h-auto flex justify-center items-center'>
+   <section id = 'two'>
+    <div className='w-full h-auto flex justify-center items-center'>
   <div className='w-[95%] h-[80%] flex flex-col items-center'>
     <div className='md:text-5xl text-4xl text-black p-4 font-semibold mt-10 mb-7'>
       LATEST <span className='italic font-light'>From The</span> BLOG
     </div>
-
-    {/* Cards container */}
     <div className='w-full flex flex-wrap justify-center items-center md:col-span-4 sm-col-span-2 col-span-1 gap-10 mb-10'>
       {data && data.map((item, index) => (
         <div 
@@ -207,9 +206,7 @@ Discover the heart of Disneyland — the happiest place on Earth.</p>
             className='md:w-[270px] w-[310px] h-[35vh] object-cover' 
             src={item.image} 
             alt={item.title} 
-          />
-
-          {/* Text container */}                     
+          />                   
           <div className='md:w-[270px] w-[310px] h-[22vh] flex justify-center items-center'>
             <div className='w-[90%] h-[90%] flex flex-col justify-center text-left'>
               <div className='flex justify-between'>
@@ -232,10 +229,7 @@ Discover the heart of Disneyland — the happiest place on Earth.</p>
     </div>
   </div>
 </div>
-
-
-
-
+   </section>
       <div className='w-full md:h-[70vh] flex md:justify-evenly md:items-center flex-col md:flex-row h-auto'>
         <div className='md:w-[30%] md:h-[95%] flex md:flex-col sm:flex-row justify-between items-center'>
           <div className='md:w-[98%] md:h-[49%] rounded-xl w-[49.5%]'>

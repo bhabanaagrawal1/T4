@@ -18,7 +18,7 @@ const Open_Blog = () => {
   return data ? (
     <>
     <Navbar/>
-      <div className='w-full md:h-[75vh] h-[90vh] bg-gray-200 flex justify-center items-center md:pt-20 pt-10 object-cover bg-no-repeat bg-cover' style={{backgroundImage:`url(${data.image})`,backgroundPosition:`${data.bgposition}`}}>
+      <div className='w-full md:h-[75vh] h-[80vh] bg-gray-200 flex justify-center items-center md:pt-20 pt-10 object-cover bg-no-repeat bg-cover' style={{backgroundImage:`url(${data.image})`,backgroundPosition:`${data.bgposition}`}}>
         <div className='w-[60%] h-[95%] flex justify-center items-center'>
             <div className='text-center'>
                 <h1 className='md:text-6xl font-bold text-[35px]'>{data.title}</h1>
@@ -59,21 +59,21 @@ const Open_Blog = () => {
                     <div className='w-[90%] h-[100%] text-center'>{data.mus_1_info}</div>
                 </p>
                 <img src={data.mus_1_image} className='object-cover w-[100%] md:h-[85%] h-[400px]' alt="" />
-                <h1 className='text-3xl md:-translate-y-70 -translate-y-80 rotate-90 -translate-x-[46%]'>{data.mus_1_name}</h1>
+                <h1 className='text-3xl lg:-translate-y-75 md:-translate-y-70 -translate-y-80 rotate-90 -translate-x-[46%]'>{data.mus_1_name}</h1>
             </div>
             <div className='md:w-[30%] h-[90%]'>
                 <p className='w-[100%] md:h-[15%] md:p-3 p-2 flex justify-center items-center'>
                     <div className='w-[90%] h-[100%] text-center'>{data.mus_2_info}</div>
                 </p>
                 <img src={data.mus_2_image} className='object-cover w-[100%] md:h-[85%] h-[400px]' alt="" />
-                <h1 className='text-3xl md:-translate-y-70 -translate-y-80 rotate-90 -translate-x-[46%]'>{data.mus_2_name}</h1>
+                <h1 className='text-3xl lg:-translate-y-75  md:-translate-y-70 -translate-y-80 rotate-90 -translate-x-[46%]'>{data.mus_2_name}</h1>
             </div>
             <div className='md:w-[30%] h-[90%]'>
                 <p className='w-[100%] h-[15%] md:p-3 p-2 flex justify-center items-center'>
                     <div className='w-[90%] h-[100%] text-center'>{data.mus_3_info}</div>
                 </p>
                 <img src={data.mus_3_image} className='object-cover w-[100%] md:h-[85%] h-[400px]' alt="" />
-                <h1 className='text-3xl md:-translate-y-70 -translate-y-80 rotate-90 -translate-x-[46%]'>{data.mus_3_name}</h1>
+                <h1 className='text-3xl lg:-translate-y-75  md:-translate-y-70 -translate-y-80 rotate-90 -translate-x-[46%]'>{data.mus_3_name}</h1>
             </div>
         </div>
         </div>

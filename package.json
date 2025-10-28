@@ -2,7 +2,6 @@
   "name": "react",
   "private": true,
   "version": "0.0.0",
-  "type":"module",
   "scripts": {
     "dev": "concurrently \"npm run json-server\" \"vite\"",
     "json-server": "json-server --watch db.json --port 5000",
